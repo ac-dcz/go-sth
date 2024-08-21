@@ -33,6 +33,13 @@ func main() {
 		return
 	}
 	PrintResult(results)
+
+	l.Txn([]logic.TxItem{{
+		Sql: "update reader set rdType = 1 where rdName like \"__\"",
+	}, {
+		Sql: "update reader set rdType = 2 where rdName like \"___\"",
+	},
+	})
 }
 
 func PrintResult(data *sql.Rows) {
