@@ -106,3 +106,11 @@ func TestParallelSplit(t *testing.T) {
 		})
 	}
 }
+
+//go test -cover 查看测试覆盖率
+
+//go test -v 查看测试详情
+
+//go test -short 跳过某些测试用例
+
+//go test -run=pattern 根据正则匹配 运行指定测试函数
