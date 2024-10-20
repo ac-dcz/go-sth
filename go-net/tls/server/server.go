@@ -51,7 +51,6 @@ func main() {
 				}
 				log.Printf("Receive Client Message: %s \n", msg.Msg)
 			}
-
 		}()
 	}
 
